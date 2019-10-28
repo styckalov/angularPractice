@@ -31,7 +31,7 @@ class Employee{
         let bonus = this.salary;
         this.experience > 2 && this.experience < 5 ? bonus += 200: bonus;
         this.experience > 5 ? bonus = (bonus * 1.2) + 500 : bonus;
-        return bonus.toFixed(2);
+        return bonus;
     }
     toString() {
        return `${this.firstName} ${this.lastName}, manager: ${this.manager.lastName}, experience: ${this.experience}`
@@ -52,7 +52,7 @@ class Designer extends Employee{
     countSalary() {
        let designerBonus = super.countSalary();
         designerBonus *= this.effCoeff;
-        return designerBonus.toFixed(2);
+        return designerBonus;
     }
 }
 
@@ -69,7 +69,7 @@ class Manager extends Employee {
         this.devList.length > 10 ? managerBonus += 300 : managerBonus;
         const devArray = this.devList.filter(developer => developer instanceof Developer);
         devArray.length > this.devList.length / 2 ?  managerBonus *= 1.1 : managerBonus;
-        return managerBonus.toFixed(2);
+        return managerBonus;
     }
     leadEmployees() {
         this.devList.forEach((element) => {
