@@ -1,5 +1,5 @@
 
-import {Developer, Employee, Designer, Manager, Department} from 'department';
+import {Developer} from '../department';
 
 describe("Developer", function() {
     it("Developer salary didn't change", function() {

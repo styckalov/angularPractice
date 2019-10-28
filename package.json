@@ -1,0 +1,27 @@
+{
+  "name": "softserve",
+  "version": "1.0.0",
+  "description": "",
+  "main": "department.js",
+  "dependencies": {
+    "jasmine-node": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/styckalov/softServeTask.git"
+  },
+  "author": "Styckalov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/styckalov/softServeTask/issues"
+  },
+  "homepage": "https://github.com/styckalov/softServeTask#readme"
+}
