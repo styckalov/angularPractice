@@ -38,7 +38,7 @@ class Employee{
     }
 }
 
-export class Developer extends Employee {
+class Developer extends Employee {
     constructor(firstName, lastName, salary, experience) {
         super (firstName, lastName, salary, experience)
     }
@@ -89,7 +89,7 @@ const Leo = new Developer('Leo', 'Rodriguez', 1500, 3);
 const Kenny = new Developer('Kenny', 'Smitt', 1000, 2);
 const Matthew = new Manager('Matthew', 'Tuck', 300, 3);
 const Charles = new Manager('Charles', 'Dickson', 500, 5);
-const Aaren = new Manager('Aaren', 'Stringer', 800, 10);
+const Aaren = new Manager('Aaren', 'Stringer', 800, 10, Julia);
 const Dep = new Department;
 
 
