@@ -1,0 +1,25 @@
+{
+  "name": "softservetask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/department.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/styckalov/softServeTask.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/styckalov/softServeTask/issues"
+  },
+  "homepage": "https://github.com/styckalov/softServeTask#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jasmine": "^3.5.0",
+    "jasmine-node": "^3.0.0"
+  }
+}
