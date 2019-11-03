@@ -34,6 +34,9 @@ class Employee{
         return bonus;
     }
     toString() {
+        if (this instanceof Manager) {
+            return `MANAGER - ${this.firstName} ${this.lastName}, experience: ${this.experience}`
+        }
        return `${this.firstName} ${this.lastName}, manager: ${this.manager.lastName}, experience: ${this.experience}`
     }
 }
