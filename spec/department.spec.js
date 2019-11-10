@@ -1,25 +1,21 @@
 const {Department, Developer, Designer, Manager} = require('../src/department');
 
 describe('Department', function () {
-    let Dep;
-    let Joel;
-    let Aaren;
-    let Ricardo;
     beforeEach(function () {
-        Dep = new Department();
-        Joel = new Designer('Joel', 'Birch', 600, 10, 1);
-        Ricardo = new Developer('Ricardo', 'Milos', 300, 1);
-        Aaren = new Manager('Aaren', 'Stringer', 500, 3, Joel,  Ricardo);
-        Dep.addManagers(Aaren);
-        Aaren.leadEmployees();
+        this.Dep = new Department();
+        this.Joel = new Designer('Joel', 'Birch', 600, 10, 1);
+        this.Ricardo = new Developer('Ricardo', 'Milos', 300, 1);
+        this.Aaren = new Manager('Aaren', 'Stringer', 500, 3, this.Joel,  this.Ricardo);
+        this.Dep.addManagers(this.Aaren);
+        this.Aaren.leadEmployees();
     });
     it('addManagers works', function () {
-        expect(Dep.managersList.length).toEqual(1);
+        expect(this.Dep.managersList.length).toEqual(1);
     });
     it('Give salary method works', function () {
-        spyOn(Ricardo, 'countSalary').and.callThrough();
-        Dep.giveSalary();
-        expect(Ricardo.countSalary).toHaveBeenCalled();
+        spyOn(this.Ricardo, 'countSalary').and.callThrough();
+        this.Dep.giveSalary();
+        expect(this.Ricardo.countSalary).toHaveBeenCalled();
     });
 });
 

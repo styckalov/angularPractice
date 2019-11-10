@@ -29,7 +29,7 @@ class Employee{
     }
     countSalary() {
         let bonus = this.salary;
-        this.experience > 2 && this.experience < 5 ? bonus += 200: bonus;
+        this.experience > 2 && this.experience <= 5 ? bonus += 200: bonus;
         this.experience > 5 ? bonus = (bonus * 1.2) + 500 : bonus;
         return bonus;
     }
@@ -82,6 +82,6 @@ class Manager extends Employee {
 }
 
 module.exports = {
-    Developer, Designer, Department, Employee, Manager
+    Developer, Designer, Manager
 };
 
